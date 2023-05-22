@@ -1,0 +1,108 @@
+/* Typography */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 1.618rem; 
+}
+
+p {
+  margin-bottom: 1.2rem;
+}
+
+/* Colors */
+:root {
+  --primary-color: #333; /* Primary color */
+  --secondary-color: #888; /* Secondary color */
+  --background-color: #f5f5f5; /* Background color */
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+h1, h2 {
+  color: var(--primary-color);
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Form Inputs */
+.input {
+  display: block;
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* Layout */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Grid System */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5rem;
+}
+
+.column {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+/*  golden ratio for width */
+.column-two-thirds {
+  flex-basis: 66.6666%;
+}
+
+.column-one-third {
+  flex-basis: 33.3333%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0.5rem;
+  }
+}
